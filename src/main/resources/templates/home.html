@@ -13,19 +13,37 @@
 <div class="container">
 	<body>
 
-		<h1>Corona Virus (COVID-19) Tracker Application</h1>
+		<h1 class="thead-dark">Corona Virus (COVID-19) Tracker
+			Application</h1>
 		<p>This application lists the current number of cases reported
 			across the globe</p>
-
-		<div class="jumbotron">
-			<h1 class="display-4" th:text="${totalReportedCases}">0</h1>
-			<p class="lead">Total cases reported as of today</p>
-			<hr class="my-4">
-			<p>
-				<span>Total new cases reported since previous day: </span> <span
-					th:text="${totalNewCasesReported}">0</span>
-			</p>
-		</div>
+		<table>
+			<tr>
+				<th>
+					<div class="jumbotron">
+						<h1 class="display-4" th:text="${totalReportedCases}">0</h1>
+						<p class="lead">Total cases reported as of today across the
+							globe</p>
+						<hr class="my-4">
+						<p>
+							<span>Total new cases reported since previous day: </span> <span
+								th:text="${totalNewCasesReported}">0</span>
+						</p>
+					</div>
+				</th>
+				<th>
+					<div class="jumbotron">
+						<h1 class="display-4" th:text="${statForIndia.latestTotalCases}">0</h1>
+						<p class="lead">Total cases reported as of today in India</p>
+						<hr class="my-4">
+						<p>
+							<span>Total new cases reported since previous day in
+								India: </span> <span th:text="${statForIndia.diffFromPreviousDay}">0</span>
+						</p>
+					</div>
+				</th>
+			</tr>
+		</table>
 
 		<table class="table table-hover">
 			<thead class="thead-dark">
