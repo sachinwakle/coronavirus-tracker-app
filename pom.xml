@@ -8,7 +8,7 @@
 		<version>2.2.5.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>io.tracker.coronairus</groupId>
+	<groupId>io.tracker.coronavirus</groupId>
 	<artifactId>coronavirus-tracker-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>coronavirus-tracker-app</name>
